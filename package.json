@@ -1,0 +1,11 @@
+{
+  "name": "littlejerrylanding",
+  "version": "1.0.0",
+  "description": "initial landing page",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "saad q.",
+  "license": "ISC"
+}
