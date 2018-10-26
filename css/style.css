@@ -94,7 +94,7 @@ body {
   color: #fff; }
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Lora', sans-serif;
   font-weight: 400;
   /*font-size: 16px;*/
   line-height: 1.7;
@@ -104,24 +104,24 @@ body {
 
 .heading-primary {
   color: #fff;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   backface-visibility: hidden;
   margin-bottom: 6rem; }
   .heading-primary--main {
     display: block;
     font-size: 6rem;
     font-weight: 400;
-    letter-spacing: .5rem;
+    letter-spacing: .25rem;
     animation: moveInLeft 1s ease-out; }
     @media only screen and (max-width: 37.5em) {
       .heading-primary--main {
         font-size: 5rem;
-        letter-spacing: 1rem; } }
+        } }
   .heading-primary--sub {
     display: block;
     font-size: 2rem;
     font-weight: 700;
-    letter-spacing: .75rem;
+    letter-spacing: .25rem;
     animation: moveInRight 1s ease-out; }
     /* @media only screen and (max-width: 37.5em) {
       .heading-primary--sub {
