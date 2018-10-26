@@ -115,7 +115,7 @@ body {
     animation: moveInLeft 1s ease-out; }
     @media only screen and (max-width: 37.5em) {
       .heading-primary--main {
-        font-size: 5rem;
+        font-size: 4.5rem;
         } }
   .heading-primary--sub {
     display: block;
