@@ -14,11 +14,70 @@
       <title>The Little Jerry</title>
   </head>
   <body>
+    <section id="headerNav">
+      <header class="masthead" role="banner" :class="{'isOpen' : navInvoke}">
+        <div class="masthead-left">
+            <h1 class="logo">
+              <span class="logo-text">The Little Jerry</span>
+                      <!-- <img src="../../assets/niad_logo{{ miniHeader || isCollapsed || isWhite ? '_bl' : '' }}.svg" alt="Niad Logo" title="Niad Logo"> -->
+            </h1>
+        </div>
+        <div class="masthead-right">
+          <button @click="toggleNav()" id="menu__icon" class="menu__mobile navTrigger" :class="{'isOpen' : navInvoke, 'white' : !navInvoke}">
+            <span class="navTrigger-outer">
+              <span class="navTrigger-inner"></span>
+            </span>
+          </button>
+        </div>
+      </header>
+      <div class="site-navigation" id="site-navigation" aria-hidden="true" :class="{ 'isOpen': navInvoke}">  
+        <nav class="site-navigation--nav" role="navigation">
+          <ul class="site-navigation--primary-links">
+    
+            <li class="site-navigation--link-container">
+                <a class="link--underline" href="mailto:littlejerryto@gmail.com">littlejerryto@gmail.com</a>
+            </li>  
+            <li class="site-navigation--link-container">
+                <a class="link--underline" href="tel:416-998-9221">call: 416-998-9221</a>
+            </li>   
+          </ul>
+    
+          <!-- <ul class="site-navigation--secondary-links">
+        
+            <li class="site-navigation--link-container">
+              <a (click)="toggleNav()" class="link--underline" routerLink="/contact" routerLinkActive="active">contact</a>
+            </li>
+    
+            <li class="site-navigation--link-container">
+              <a class="link--underline" href="mailto:support@niadsystems.com">support</a>
+            </li>
+                
+          </ul> -->
+        </nav>
+      </div>
+
+    </section>
     <section class="main-container">
       <h1 class="heading-primary">
         <span class="heading-primary--main">The Little Jerry</span>
         <span class="heading-primary--sub">Spring 2019</span>
       </h1>
     </section>
+    <script src="https://unpkg.com/vue"></script>
+    <script>
+      new Vue({
+        el: '#headerNav',
+        data: {
+        clickMessage: 'Click me!',
+        navInvoke: false
+      },
+      
+        methods: {
+          toggleNav: function() {
+            this.navInvoke = !this.navInvoke;
+          }
+        }
+      })
+    </script>
   </body>
 </html>
