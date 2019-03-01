@@ -118,13 +118,11 @@ body {
   color: #fff; }
 
 body {
-  /* font-family: 'Lora', sans-serif; */
-  font-family: 'Alfa Slab One', cursive;
+  font-family: 'Shrikhand', cursive;
   font-weight: 400;
   /*font-size: 16px;*/
   height: 100vh;
   color: var(--color-grey-dark-2);
-  /* background-color: var(--color-primary); */
   background-image: url('../img/homepage_1.jpg');
   background-size: cover;
   background-position: 50% 30%;
@@ -169,14 +167,13 @@ img {
   backface-visibility: hidden;
   text-shadow: 1px 2px 6px #4e4e4ed1;
   margin-bottom: 6rem; }
-  .heading-primary--main {
+  .heading-primary--main, .heading-primary--sup {
     display: block;
-    font-size: 6.4rem;
+    font-size: 6.6rem;
     font-weight: 400;
     letter-spacing: .25rem;
-    line-height: 1.7;
+    line-height: 1;
     animation: moveInLeft 1s ease-out; 
-    line-height: 1.2;
     margin-bottom: 1.8rem;
   }
     @media only screen and (max-width: 37.5em) {
@@ -184,16 +181,31 @@ img {
         font-size: 4.5rem;
       } 
     }
+  .heading-primary--sup {
+    font-size: 4.5rem;
+    margin-bottom: 0;
+    line-height: .3;
+    position: relative;
+    left: 1rem;
+    
+  }
+  @media only screen and (max-width: 37.5em) {
+    .heading-primary--sup {
+      font-size: 3.3rem;
+      line-height: 1.3;
+      left: .5rem;
+    } 
+  }
   .heading-primary--sub {
     display: block;
-    font-size: 2.8rem;
+    font-size: 4rem;
     font-weight: 400;
     letter-spacing: .25rem;
     animation: moveInRight 1s ease-out; }
-    /* @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 37.5em) {
       .heading-primary--sub {
-        font-size: 1rem;
-        letter-spacing: .5rem; } } */
+        font-size: 3rem;
+        } }
 
 .heading-secondary {
   font-size: 4rem;
@@ -201,6 +213,7 @@ img {
   font-weight: 600;
   display: inline-block;
   background-image: linear-gradient(to right, #7ed56f, #28b485);
+  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   letter-spacing: .2rem;

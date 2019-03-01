@@ -4,8 +4,7 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       
-      <!-- <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet"> -->
-      <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
       <link rel="stylesheet" href="css/style.css">
@@ -57,9 +56,10 @@
       </div>
 
     </section>
-    <section class="main-container">
+    <section id="main-container" class="main-container">
       <h1 class="heading-primary">
-        <span class="heading-primary--main">The Little Jerry</span>
+        <span class="heading-primary--sup">the</span><br v-if="!isMobile">
+        <span class="heading-primary--main">Little Jerry</span>
         <span class="heading-primary--sub">Spring 2019</span>
       </h1>
     </section>
@@ -78,6 +78,33 @@
           }
         }
       })
+      new Vue({
+        el: '#main-container',
+        data: {
+          isMobile: false,
+          window: {
+            width: 0,
+            height: 0
+          }
+        },
+        created() {
+          window.addEventListener('resize', this.handleResize)
+          this.handleResize();
+        },
+        destroyed() {
+          window.removeEventListener('resize', this.handleResize)
+        },
+        methods: {
+          handleResize() {
+            this.window.width = window.innerWidth;
+            this.window.height = window.innerHeight;
+            this.handleMobile();
+          },
+          handleMobile: function() {
+            this.window.width <= 600 ? this.isMobile = true : this.isMobile = false;
+          }
+        }
+      });
     </script>
   </body>
 </html>
