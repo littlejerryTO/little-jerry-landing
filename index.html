@@ -6,6 +6,7 @@
       
       <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
       <link rel="stylesheet" href="css/style.css">
       <link rel="shortcut icon" type="image/png" href="img/favicon.png">
@@ -22,7 +23,7 @@
             </h1>
         </div>
         <div class="masthead-right">
-          <button @click="toggleNav()" id="menu__icon" class="menu__mobile navTrigger" :class="{'isOpen' : navInvoke, 'white' : !navInvoke}">
+          <button @click="toggleNav" id="menu__icon" class="menu__mobile navTrigger" :class="{'isOpen' : navInvoke, 'white' : !navInvoke}">
             <span class="navTrigger-outer">
               <span class="navTrigger-inner"></span>
             </span>
@@ -34,10 +35,15 @@
           <ul class="site-navigation--primary-links">
     
             <li class="site-navigation--link-container">
-                <a class="link--underline" href="mailto:littlejerryto@gmail.com">littlejerryto@gmail.com</a>
+              <a class="link--underline" href="mailto:littlejerryto@gmail.com">
+                <!-- <i class="fa fa-envelope-square"></i>  -->
+                littlejerryto@gmail.com
+              </a>
             </li>  
             <li class="site-navigation--link-container">
-                <a class="link--underline" href="tel:416-998-9221">call: 416-998-9221</a>
+              <a class="link--underline" href="tel:416-998-9221">
+                <i class="fa fa-phone-square"></i> 416-998-9221
+              </a>
             </li>   
           </ul>
     
@@ -63,22 +69,33 @@
         <span class="heading-primary--sub">Spring 2019</span>
       </h1>
     </section>
-    <script src="https://unpkg.com/vue"></script>
+    <section id="social" class="social">
+      <div class="flex-center">
+        <a href="https://twitter.com/littlejerryTO" target="_blank">
+          <i class="fa fa-twitter icon-3d"></i>
+        </a>
+        <a href="https://facebook.com/thelittlejerry" target="_blank">
+          <i class="fa fa-facebook icon-3d"></i>
+        </a>
+        <a href="https://www.instagram.com/littlejerryto/" target="_blank">
+          <i class="fa fa-instagram icon-3d"></i>
+        </a>
+      </div>
+    </section>
+    <script src="https://unpkg.com/vue@2.6.8/dist/vue.js"></script>
     <script>
-      new Vue({
+      let header = new Vue({
         el: '#headerNav',
         data: {
-        clickMessage: 'Click me!',
-        navInvoke: false
-      },
-      
+          navInvoke: false
+        },
         methods: {
           toggleNav: function() {
             this.navInvoke = !this.navInvoke;
           }
         }
       })
-      new Vue({
+      let maain = new Vue({
         el: '#main-container',
         data: {
           isMobile: false,
