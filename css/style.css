@@ -425,8 +425,8 @@ body.isOpenSiteNavigation .masthead-scrollbar-mask {
   transition-property: opacity, filter;
   transition-duration: 0.15s;
   transition-timing-function: linear;
-  height: 1.375rem;
-  width: 3.2rem;
+  height: 1.675rem;
+  width: 4rem;
   color: var(--color-primary);
 }
 
@@ -446,7 +446,7 @@ body.isOpenSiteNavigation .masthead-scrollbar-mask {
 }
 
 .navTrigger-outer {
-  height: 1.375rem;
+  height: 1.675rem;
   display: block;
   position: relative
 }
@@ -474,12 +474,12 @@ body.isOpenSiteNavigation .masthead-scrollbar-mask {
 }
 
 .navTrigger-inner:before {
-  top: -.8em;
+  top: -1em;
   transition: top 0.2s 0.5s cubic-bezier(0.32, 0.01, 0, 1), opacity 0s 0.5s linear, transform 0.5s 0s cubic-bezier(0.32, 0.01, 0, 1), margin-top 0.2s 0s cubic-bezier(0.32, 0.01, 0, 1)
 }
 
 .navTrigger-inner:after {
-  bottom: -.8em;
+  bottom: -1em;
   transition: bottom 0.2s 0.5s cubic-bezier(0.32, 0.01, 0, 1), transform 0.5s 0s cubic-bezier(0.32, 0.01, 0, 1), margin-bottom 0.2s 0s cubic-bezier(0.32, 0.01, 0, 1)
 }
 
@@ -883,6 +883,12 @@ section#social {
   -ms-flex-align: center;
   align-items: center;
   margin-bottom: 1rem;
+}
+
+@media screen and (orientation: portrait) {
+  .flex-center {
+    margin-bottom: 7.5vh;
+  }
 }
 
 .icon-3d {
