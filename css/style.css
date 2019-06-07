@@ -163,39 +163,37 @@ img {
 
 .heading-primary {
   color: var(--color-secondary);
-  /* text-transform: uppercase; */
   backface-visibility: hidden;
   text-shadow: 1px 2px 6px #4e4e4ed1;
   margin-bottom: 6rem; }
-  .heading-primary--main, .heading-primary--sup {
+  .heading-primary--main {
     display: block;
-    font-size: 6.6rem;
-    font-weight: 400;
-    letter-spacing: .25rem;
-    line-height: 1;
     animation: moveInLeft 1s ease-out; 
     margin-bottom: 1.8rem;
   }
-    @media only screen and (max-width: 37.5em) {
+  .heading-primary img {
+    width: 90%;
+  }
+    /* @media only screen and (max-width: 37.5em) {
       .heading-primary--main {
         font-size: 4.5rem;
       } 
-    }
-  .heading-primary--sup {
+    } */
+  /* .heading-primary--sup {
     font-size: 4.5rem;
     margin-bottom: 0;
     line-height: .3;
     position: relative;
     left: 1rem;
     
-  }
-  @media only screen and (max-width: 37.5em) {
+  } */
+  /* @media only screen and (max-width: 37.5em) {
     .heading-primary--sup {
       font-size: 3.3rem;
       line-height: 1.3;
       left: .5rem;
     } 
-  }
+  } */
   .heading-primary--sub {
     display: block;
     font-size: 4rem;
@@ -204,7 +202,7 @@ img {
     animation: moveInRight 1s ease-out; }
     @media only screen and (max-width: 37.5em) {
       .heading-primary--sub {
-        font-size: 3rem;
+        font-size: 2.7rem;
         } }
 
 .heading-secondary {
@@ -241,23 +239,23 @@ img {
 .main-container {
   position: absolute;
   left: 33%;
-  top: 23%;
+  top: 20%;
   width: 45%;
   /* height: 100vh; */
   transform: translate(-50%, -20%);
 }
 @media only screen and (max-width: 75em) {
   .main-container {
-    left: 26%;
-    top: 17%;
-    width: 44%;
+    left: 31%;
+    top: 11%;
+    width: 50%;
   }
 }
 @media only screen and (max-width: 37.5em) {
   .main-container {
-    left: 30%;
-    top: 11%;
-    width: 50%;
+    left: 35%;
+    top: 14%;
+    width: 60%;
   } 
 }
 
@@ -364,16 +362,17 @@ body.isOpenSiteNavigation .masthead-scrollbar-mask {
 
 .logo {
   transition: all 0.1s cubic-bezier(0.32, 0.01, 0, 1);
-  /* width: 7rem;
+  width: 7rem;
   height: 1.5rem;
-  margin-top: -.3em */
+  margin-top: -.3em;
   opacity: 0;
   margin-top: -30px;
 }
 
 .masthead.isOpen .logo {
   opacity: 1;
-  margin-top: 0;
+  margin-top: -14px;
+  width: 20rem;
 }
 
 .logo-text {
