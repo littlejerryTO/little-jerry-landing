@@ -861,13 +861,13 @@ body.isOpenSiteNavigation .masthead-scrollbar-mask {
   animation-play-state: running
 }
 
-section#social {
+section.social {
   display: flex;
   align-items: flex-end;
   height: 100vh;
 }
 
-section#social.isOpen {
+section.social.isOpen {
   position: relative;
   z-index: 912;
 }
@@ -901,7 +901,7 @@ section#social.isOpen {
   font-size: 4.4rem;
 }
 
-section#social.isOpen .icon-3d {
+section.social.isOpen .icon-3d {
   color: var(--color-tertiary);
 }
 
