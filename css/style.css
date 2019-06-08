@@ -118,7 +118,7 @@ body {
   color: #fff; }
 
 body {
-  font-family: 'Shrikhand', cursive;
+  font-family: 'Ultra', cursive;
   font-weight: 400;
   /*font-size: 16px;*/
   height: 100vh;
@@ -867,6 +867,11 @@ section#social {
   height: 100vh;
 }
 
+section#social.isOpen {
+  position: relative;
+  z-index: 912;
+}
+
 .flex-center {
   width: 100%;
   display: -webkit-box;
@@ -895,6 +900,11 @@ section#social {
   color: #fff;
   font-size: 4.4rem;
 }
+
+section#social.isOpen .icon-3d {
+  color: var(--color-tertiary);
+}
+
 @media (pointer: fine) {
   .icon-3d:hover {
     -webkit-animation: icon3d 200ms infinite;
