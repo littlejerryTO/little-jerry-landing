@@ -123,10 +123,16 @@ body {
   /*font-size: 16px;*/
   height: 100vh;
   color: var(--color-grey-dark-2);
-  background-image: url('../img/homepage_1.jpg');
+  background-image: url('../img/LJ_mirrorball.jpg');
   background-size: cover;
   background-position: 50% 30%;
 }
+
+@media screen and (orientation: portrait) {
+  body {    
+    background-image: url('../img/LJ_recordShelf.jpg');
+    background-position: 64% 30%; }
+  }
 
 a, [role="button"], .ajax, .cta {
   color: inherit;
@@ -492,8 +498,13 @@ body.isOpenSiteNavigation .masthead-scrollbar-mask {
 }
 
 .navTrigger.white {
-  color: #3a2b1a;
-  color: #fff;
+  /* color: #3a2b1a; */
+  color: var(--color-tertiary);
+}
+@media screen and (orientation: portrait) {
+  .navTrigger.white {
+    color: var(--color-secondary);
+  }
 }
 
 .navTrigger.isOpen .navTrigger-inner {
