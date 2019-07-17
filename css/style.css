@@ -207,10 +207,17 @@ img {
     font-weight: 400;
     letter-spacing: .25rem;
     animation: moveInRight 1s ease-out; }
+    span.heading-primary--sub:last-child {
+      font-size: 2.6rem;
+      margin-top: 2.5rem;
+      line-height: 1.6;
+    }
     @media only screen and (max-width: 37.5em) {
       .heading-primary--sub {
         font-size: 2.7rem;
-        } }
+        }
+      span.heading-primary--sub:last-child {
+        font-size: 2.3rem;} }
 
 .heading-secondary {
   font-size: 4rem;
