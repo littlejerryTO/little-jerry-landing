@@ -18,18 +18,20 @@
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
 
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+    <link rel="stylesheet" href="../css/style_togo.css" />
+    <link rel="shortcut icon" type="image/png" href="../img/favicon.png" />
 
     <title>The Little Jerry</title>
   </head>
   <body>
-    <section id="headerNav">
+    <section id="headerNav" class="headerNav" :class="{'isOpen' : navInvoke}">
       <header class="masthead" role="banner" :class="{'isOpen' : navInvoke}">
         <div class="masthead-left">
           <h1 class="logo">
             <!-- <span class="logo-text">The Little Jerry</span> -->
-            <img src="img/TheLittleJerryLogo_brown.svg" />
+            <a href="../index.html"
+              ><img src="../img/TheLittleJerryLogo_brown.svg"
+            /></a>
             <!-- <img src="../../assets/niad_logo{{ miniHeader || isCollapsed || isWhite ? '_bl' : '' }}.svg" alt="Niad Logo" title="Niad Logo"> -->
           </h1>
         </div>
@@ -55,7 +57,7 @@
         <nav class="site-navigation--nav" role="navigation">
           <ul class="site-navigation--primary-links">
             <li class="site-navigation--link-container">
-              <a class="link--underline" target="_self" href="jerry-to-go"
+              <a class="link--underline" target="_blank" href="index.html"
                 >Jerry To Go
               </a>
             </li>
@@ -74,7 +76,7 @@
               <a
                 class="link--underline"
                 target="_blank"
-                href="img/LittleJerry_Wine.pdf"
+                href="../img/LittleJerry_Wine.pdf"
               >
                 <i class="fa fa-file-text"></i> Wine List
               </a>
@@ -83,7 +85,7 @@
               <a
                 class="link--underline"
                 target="_blank"
-                href="img/LittleJerry_Beer.pdf"
+                href="../img/LittleJerry_Beer.pdf"
               >
                 <i class="fa fa-beer"></i> Beer List
               </a>
@@ -119,34 +121,85 @@
       </div>
     </section>
     <section id="main-container" class="main-container">
-      <h1 class="heading-primary">
-        <!-- <span class="heading-primary--sup">the</span><br v-if="!isMobile">
-        <span class="heading-primary--main">Little Jerry</span> -->
-        <img
-          src="img/TheLittleJerryLogo_white.svg"
-          class="heading-primary--main"
-          alt="The Little Jerry"
-        />
-        <!-- <span class="heading-primary--sub">Summer 2019</span> -->
-        <span class="heading-primary--sub">418 College St<br />Toronto</span>
-        <span class="heading-primary--sub heading-primary--sub2"
-          >Open for Take Out<br />Tuesday - Saturday</span
-        >
-        <span class="heading-primary--sub heading-primary--sub2"
-          >Check
-          <a href="jerry-to-go/" target="_blank">Jerry to go!</a>
-          for Current Food/Wine/Beer/Cider</span
-        >
-        <span class="heading-primary--sub heading-primary--sub2"
-          >Check
-          <a href="https://www.instagram.com/littlejerryto/" target="_blank"
-            >Instagram</a
-          >
-          for Music Listings</span
-        >
-      </h1>
+      <div class="main-container-content">
+        <h1 class="heading-primary">Jerry to go!</h1>
+        <h3 class="heading-secondary">
+          Food, wine, cider and beer available for takeout Tues-Sat from 4pm -
+          9pm
+        </h3>
+        <h3 class="heading-secondary">
+          Give us a ring at <a href="tel:416-551-5981">416-551-5981</a> anytime
+          between 3:30pm - 8:30pm to place your order & we’ll advise on pickup
+          time (about half an hour).
+        </h3>
+        <h3 class="heading-secondary">
+          Full food & drink menus posted here and updated daily.
+        </h3>
+        <h3 class="heading-secondary">
+          Social distancing measures will be in place and we ask that everyone
+          adhere to them: no more than 2 people in the premises at once and
+          please keep at least 6ft. distance if a line forms.
+        </h3>
+        <h3 class="heading-secondary">
+          Payment can be made via debit or credit card upon pickup (no cash
+          accepted at this time).
+        </h3>
+        <h3 class="heading-secondary">Enjoy Jerry at home!</h3>
+        <h2 class="heading-primary heading-primary--sub">
+          Food Menu<br />Fri May 1 & Sat May 2
+        </h2>
+        <h3 class="heading-secondary heading-secondary--list">
+          Honey Lavender Roasted Whole Chicken
+        </h3>
+        <h3 class="heading-secondary heading-secondary--list">
+          Crispy Fingerling Potatoes
+        </h3>
+        <h3 class="heading-secondary heading-secondary--list">
+          Green Beans Amandine
+        </h3>
+        <h3 class="heading-secondary heading-secondary--list">
+          Roasted Chicken Jus
+        </h3>
+        <h3 class="heading-secondary heading-secondary--list">Tiramisu</h3>
+        <div class="menu-price">
+          <h3 class="heading-secondary heading-secondary--list">
+            $55 Dinner for 2 (Whole Chicken)
+          </h3>
+          <h3 class="heading-secondary heading-secondary--list">
+            $30 Dinner for 1 (Half Chicken)
+          </h3>
+        </div>
+      </div>
     </section>
-    <section id="social" class="social">
+    <section class="links-container">
+      <div class="main-container-links">
+        <ul class="site-navigation--primary-links">
+          <li
+            class="site-navigation--link-container site-navigation--link-container--page"
+          >
+            <a
+              class="link--underline"
+              target="_blank"
+              href="../img/LittleJerry_Wine.pdf"
+            >
+              <i class="fa fa-file-text"></i> Wine List
+            </a>
+          </li>
+          <li
+            class="site-navigation--link-container site-navigation--link-container--page"
+          >
+            <a
+              class="link--underline"
+              target="_blank"
+              href="../img/LittleJerry_Beer.pdf"
+            >
+              <i class="fa fa-beer"></i> Beer List
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- <section id="social" class="social">
       <div class="flex-center">
         <a href="https://twitter.com/littlejerryTO" target="_blank">
           <i class="fa fa-twitter icon-3d"></i>
@@ -158,7 +211,7 @@
           <i class="fa fa-instagram icon-3d"></i>
         </a>
       </div>
-    </section>
+    </section> -->
     <script src="https://unpkg.com/vue@2.6.8/dist/vue.js"></script>
     <!-- <script src="https://unpkg.com/vue@2.6.8/dist/vue.min.js"></script> -->
     <script>
