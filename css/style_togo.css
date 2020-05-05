@@ -331,10 +331,23 @@ section.links-container .site-navigation--link-container--page {
 .menu-price {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .menu-price .heading-secondary.heading-secondary--list {
   padding: 0 20px;
+}
+
+.menu-price .heading-secondary.heading-secondary--list.heading-secondary--price {
+  color: var(--color-primary);
+}
+
+.menu-price .heading-secondary.heading-secondary--list.heading-secondary--cta {
+  margin: 25px 0;
+}
+
+.primary-color {
+  color: var(--color-primary);
 }
 
 @media only screen and (max-width: 37.5em) {

@@ -393,6 +393,10 @@ span.heading-primary--sub.heading-primary--sub2 a {
   opacity: 0;
 }
 
+.primary-color {
+  color: var(--color-primary);
+}
+
 .masthead-scrollbar-mask {
   display: none;
 }
