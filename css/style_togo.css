@@ -253,6 +253,10 @@ img {
   margin-top: 3rem;
 }
 
+.heading-primary--sub .amp {
+  font-size: 3.2rem;
+}
+
 span.heading-primary--sub.heading-primary--sub2 {
   font-size: 2.6rem;
   margin-top: 2.5rem;
@@ -269,7 +273,11 @@ span.heading-primary--sub.heading-primary--sub2 a {
   }
 
   span.heading-primary--sub.heading-primary--sub2 {
-    font-size: 2.3rem;
+    font-size: 2.6rem;
+  }
+
+  .heading-primary--sub .amp {
+    font-size: 2.4rem;
   }
 }
 
