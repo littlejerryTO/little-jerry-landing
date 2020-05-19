@@ -357,6 +357,10 @@ section.links-container .site-navigation--link-container--page {
   padding: 0 20px;
 }
 
+.heading-secondary.heading-secondary--list.heading-secondary--item {
+  font-weight: 700;
+}
+
 .menu-price .heading-secondary.heading-secondary--list.heading-secondary--price {
   color: var(--color-primary);
 }
