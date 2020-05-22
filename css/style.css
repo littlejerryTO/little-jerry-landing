@@ -255,10 +255,33 @@ span.heading-primary--sub.heading-primary--sub2 {
   font-size: 2.6rem;
   margin-top: 2.5rem;
   line-height: 1.6;
+  position: relative;
 }
 
 span.heading-primary--sub.heading-primary--sub2 a {
-  text-decoration: underline;
+  /* text-decoration: underline; */
+  position: relative;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+  white-space: nowrap;
+  /* transition: all 0.1s ease 0.1s; */
+}
+
+.heading-primary--sub.heading-primary--sub2 a:after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  border-bottom: 2px solid currentColor;
+  animation-name: underline_out;
+  animation-duration: 0.3s;
+  animation-timing-function: cubic-bezier(0.32, 0.01, 0, 1);
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
 }
 
 @media only screen and (max-width: 37.5em) {
@@ -269,6 +292,22 @@ span.heading-primary--sub.heading-primary--sub2 a {
 
   span.heading-primary--sub.heading-primary--sub2 {
     font-size: 2.3rem;
+  }
+
+  .heading-primary--sub.heading-primary--sub2 a:after {
+    animation-name: underline_in;
+  }
+}
+
+@media screen and (orientation:landscape) and (min-width: 56.25em) {
+  .heading-primary--sub.heading-primary--sub2 a:hover:after {
+    animation-name: underline_in;
+    animation-duration: 0.3s;
+    animation-timing-function: cubic-bezier(0.32, 0.01, 0, 1);
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
   }
 }
 
