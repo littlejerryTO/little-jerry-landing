@@ -18,18 +18,20 @@
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
 
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+    <link rel="stylesheet" href="../css/style_togo.css" />
+    <link rel="shortcut icon" type="image/png" href="../img/favicon.png" />
 
-    <title>The Little Jerry</title>
+    <title>The Little Jerry - Menu</title>
   </head>
   <body>
-    <section id="headerNav">
+    <section id="headerNav" class="headerNav" :class="{'isOpen' : navInvoke}">
       <header class="masthead" role="banner" :class="{'isOpen' : navInvoke}">
         <div class="masthead-left">
           <h1 class="logo">
             <!-- <span class="logo-text">The Little Jerry</span> -->
-            <img src="img/TheLittleJerryLogo_brown.svg" />
+            <a href="../index.html"
+              ><img src="../img/TheLittleJerryLogo_brown.svg"
+            /></a>
             <!-- <img src="../../assets/niad_logo{{ miniHeader || isCollapsed || isWhite ? '_bl' : '' }}.svg" alt="Niad Logo" title="Niad Logo"> -->
           </h1>
         </div>
@@ -55,10 +57,12 @@
         <nav class="site-navigation--nav" role="navigation">
           <ul class="site-navigation--primary-links">
             <li class="site-navigation--link-container">
-              <a class="link--underline" target="_self" href="menu">Menu </a>
+              <a class="link--underline" target="_blank" href="index.html"
+                >Menu
+              </a>
             </li>
             <li class="site-navigation--link-container">
-              <a class="link--underline" target="_self" href="jerry-to-go"
+              <a class="link--underline" target="_self" href="../jerry-to-go"
                 >Jerry To Go
               </a>
             </li>
@@ -77,7 +81,7 @@
               <a
                 class="link--underline"
                 target="_blank"
-                href="img/LittleJerry_Wine.pdf"
+                href="../img/LittleJerry_Wine.pdf"
               >
                 <i class="fa fa-file-text"></i> Wine List
               </a>
@@ -86,7 +90,7 @@
               <a
                 class="link--underline"
                 target="_blank"
-                href="img/LittleJerry_Beer.pdf"
+                href="../img/LittleJerry_Beer.pdf"
               >
                 <i class="fa fa-beer"></i> Beer List
               </a>
@@ -122,36 +126,117 @@
       </div>
     </section>
     <section id="main-container" class="main-container">
-      <h1 class="heading-primary">
-        <!-- <span class="heading-primary--sup">the</span><br v-if="!isMobile">
-        <span class="heading-primary--main">Little Jerry</span> -->
-        <img
-          src="img/TheLittleJerryLogo_white.svg"
-          class="heading-primary--main"
-          alt="The Little Jerry"
-        />
-        <!-- <span class="heading-primary--sub">Summer 2019</span> -->
-        <span class="heading-primary--sub">418 College St<br />Toronto</span>
-        <span class="heading-primary--sub heading-primary--sub2"
-          >Open for Take Out<br />Tuesday - Saturday</span
-        >
-        <span class="heading-primary--sub heading-primary--sub2"
-          >Check
-          <a href="jerry-to-go/" class="primary-color" target="_self"
-            >Jerry to go!</a
+      <div class="main-container-content">
+        <h1 class="heading-primary">Food Menu</h1>
+        <div class="menut-item">
+          <h3
+            class="heading-secondary heading-secondary--list heading-secondary--item"
           >
-          for Current Food/Wine/Beer/Cider</span
-        >
-        <span class="heading-primary--sub heading-primary--sub2"
-          >Check
-          <a href="https://www.instagram.com/littlejerryto/" target="_blank"
-            >Instagram</a
+            Brioche <span class="primary-color">+</span> Seaweed Butter
+          </h3>
+          <h3
+            class="heading-secondary heading-secondary--list heading-secondary--price"
           >
-          for Music Listings</span
-        >
-      </h1>
+            <span class="primary-color">$</span>6.5
+          </h3>
+        </div>
+        <div class="menut-item">
+          <h3
+            class="heading-secondary heading-secondary--list heading-secondary--item"
+          >
+            Beef Tart w<span class="primary-color">/</span> Asian Pear, Daikon
+            <span class="primary-color">+</span> Egg Yolk Jam
+          </h3>
+          <h3
+            class="heading-secondary heading-secondary--list heading-secondary--price"
+          >
+            <span class="primary-color">$</span>8
+          </h3>
+        </div>
+        <div class="menut-item">
+          <h3
+            class="heading-secondary heading-secondary--list heading-secondary--item"
+          >
+            Salmon Crudo w<span class="primary-color">/</span> Ikura,
+            Horseradish Cream <span class="primary-color">+</span> Ramp Oil
+          </h3>
+          <h3
+            class="heading-secondary heading-secondary--list heading-secondary--price"
+          >
+            <span class="primary-color">$</span>15
+          </h3>
+        </div>
+        <div class="menut-item">
+          <h3
+            class="heading-secondary heading-secondary--list heading-secondary--item"
+          >
+            House Made Ricotta w<span class="primary-color">/</span> ON Peas,
+            Sourdough Crumb <span class="primary-color">+</span> Garden Herbs
+          </h3>
+          <h3
+            class="heading-secondary heading-secondary--list heading-secondary--price"
+          >
+            <span class="primary-color">$</span>12
+          </h3>
+        </div>
+        <div class="menut-item">
+          <h3
+            class="heading-secondary heading-secondary--list heading-secondary--item"
+          >
+            30 Day Dry Aged ON Ribeye w<span class="primary-color">/</span>
+            Pickled Enoki, Smoked Sunchokes
+            <span class="primary-color">+</span> Ramp Pesto
+          </h3>
+          <h3
+            class="heading-secondary heading-secondary--list heading-secondary--price"
+          >
+            <span class="primary-color">$</span>31
+          </h3>
+        </div>
+        <div class="menut-item">
+          <h3
+            class="heading-secondary heading-secondary--list heading-secondary--item"
+          >
+            Fresh <span class="primary-color">+</span> Fermented ON Strawberries
+            w<span class="primary-color">/</span> Milk Sorbet
+          </h3>
+          <h3
+            class="heading-secondary heading-secondary--list heading-secondary--price"
+          >
+            <span class="primary-color">$</span>7
+          </h3>
+        </div>
+      </div>
     </section>
-    <section id="social" class="social">
+    <section class="links-container">
+      <div class="main-container-links">
+        <ul class="site-navigation--primary-links">
+          <li
+            class="site-navigation--link-container site-navigation--link-container--page"
+          >
+            <a
+              class="link--underline"
+              target="_blank"
+              href="../img/LittleJerry_Wine.pdf"
+            >
+              <i class="fa fa-file-text"></i> Wine List
+            </a>
+          </li>
+          <li
+            class="site-navigation--link-container site-navigation--link-container--page"
+          >
+            <a
+              class="link--underline"
+              target="_blank"
+              href="../img/LittleJerry_Beer.pdf"
+            >
+              <i class="fa fa-beer"></i> Beer List
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- <section id="social" class="social">
       <div class="flex-center">
         <a href="https://twitter.com/littlejerryTO" target="_blank">
           <i class="fa fa-twitter icon-3d"></i>
@@ -163,7 +248,7 @@
           <i class="fa fa-instagram icon-3d"></i>
         </a>
       </div>
-    </section>
+    </section> -->
     <!-- <script src="https://unpkg.com/vue@2.6.8/dist/vue.js"></script> -->
     <script src="https://unpkg.com/vue@2.6.8/dist/vue.min.js"></script>
     <script>

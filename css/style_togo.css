@@ -379,6 +379,17 @@ section.links-container .site-navigation--link-container--page {
   }
 }
 
+.menut-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.8rem;
+}
+
+section.links-container .site-navigation--primary-links {
+  font-size: 3.5rem;
+}
+
+
 .masthead {
   background: #fffffff5;
   padding: 3.5rem;
