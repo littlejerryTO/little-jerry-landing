@@ -1,0 +1,46 @@
+.main-container-content {
+  display: flex;
+  width: 100%;
+  max-width: 85%;
+  justify-content: left;
+  flex-direction: column;
+}
+
+.main-container-content>.heading-secondary {
+  margin: 0 0 .6em 0;
+}
+
+.heading-secondary {
+  display: flex;
+  justify-content: space-between;
+  font-size: 2.3em;
+  text-align: left;
+  color: var(--color-grey-dark-1);
+}
+
+.tertiary-color {
+  color: var(--color-tertiary);
+}
+
+.wine-sec {
+  margin-top: 2em;
+}
+
+.wine-sec .heading-secondary {
+  color: var(--color-tertiary);
+  margin-bottom: 1em;
+  font-weight: 600;
+}
+
+p.wine-desc {
+  font-size: 1.95em;
+  color: var(--color-grey-dark-1);
+  text-align: left;
+  margin-bottom: 1em;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .main-container {
+    margin-top: 27%;
+  }
+}
