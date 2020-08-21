@@ -4,6 +4,7 @@
   max-width: 85%;
   justify-content: left;
   flex-direction: column;
+  margin-bottom: 4em;
 }
 
 .main-container-content>.heading-secondary {
@@ -16,6 +17,10 @@
   font-size: 2.3em;
   text-align: left;
   color: var(--color-grey-dark-1);
+}
+
+.main-container-content>.heading-secondary:first-child {
+  font-weight: 600;
 }
 
 .tertiary-color {
