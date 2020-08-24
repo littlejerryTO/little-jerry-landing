@@ -166,6 +166,10 @@ body {
   body {
     background-image: url('../img/LJ_recordShelf.jpg');
     background-position: 64% 30%;
+    /* background-blend-mode: overlay;
+    background-color: #48355a; */
+    background-blend-mode: difference;
+    background-color: #533e67;
   }
 }
 
@@ -219,8 +223,14 @@ img {
 }
 
 .heading-primary img {
-  width: 90%;
+  width: 60%;
   filter: drop-shadow(1px 2px 6px #4e4e4ed1);
+}
+
+@media only screen and (max-width: 37.5em) {
+  .heading-primary img {
+    width: 90%;
+  }
 }
 
 /* @media only screen and (max-width: 37.5em) {
@@ -357,9 +367,9 @@ span.heading-primary--sub.heading-primary--sub2 a {
 
 .main-container {
   position: absolute;
-  left: 33%;
+  left: 39%;
   top: 27%;
-  width: 45%;
+  width: 55%;
   /* height: 100vh; */
   transform: translate(-50%, -20%);
 }
@@ -374,9 +384,9 @@ span.heading-primary--sub.heading-primary--sub2 a {
 
 @media only screen and (max-width: 37.5em) {
   .main-container {
-    left: 35%;
+    left: 40%;
     top: 25%;
-    width: 60%;
+    width: 63%;
   }
 }
 
@@ -1038,11 +1048,12 @@ section.social.isOpen {
   -ms-flex-align: center;
   align-items: center;
   margin-bottom: 1rem;
+  flex-direction: row-reverse;
 }
 
 @media screen and (orientation: portrait) {
   .flex-center {
-    margin-bottom: 7.5vh;
+    margin-bottom: 3.5vh;
   }
 }
 
