@@ -1055,10 +1055,14 @@ section.social.isOpen {
 
 @media screen and (orientation: portrait) {
   .flex-center {
+    width: initial;
     margin-bottom: 26.5vh;
     flex-direction: column-reverse;
-    align-items: flex-end;
-    margin-right: 6.5vw;
+  }
+
+  section.social {
+    justify-content: flex-end;
+    margin-right: 6.5%;
   }
 }
 
