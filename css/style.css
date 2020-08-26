@@ -781,6 +781,16 @@ body.isOpenSiteNavigation .masthead-scrollbar-mask {
   transition: opacity 0.5s cubic-bezier(0.03, 0.46, 0.31, 0.97)
 }
 
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  .site-navigation--nav {
+    padding-right: 0;
+  }
+
+  .site-navigation--primary-links {
+    padding-right: 0;
+  }
+}
+
 @media screen and (orientation: portrait) {
   .site-navigation--nav {
     padding-top: calc(20vw * 1);
