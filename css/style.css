@@ -168,8 +168,10 @@ body {
     background-position: 64% 30%;
     /* background-blend-mode: overlay;
     background-color: #48355a; */
-    background-blend-mode: difference;
-    background-color: #533e67;
+    /* background-blend-mode: difference;
+    background-color: #533e67; */
+    background-blend-mode: multiply;
+    background-color: #9e6c2e;
   }
 }
 
@@ -1053,7 +1055,10 @@ section.social.isOpen {
 
 @media screen and (orientation: portrait) {
   .flex-center {
-    margin-bottom: 3.5vh;
+    margin-bottom: 26.5vh;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    margin-right: 6.5vw;
   }
 }
 
