@@ -387,7 +387,7 @@ span.heading-primary--sub.heading-primary--sub2 a {
 @media only screen and (max-width: 37.5em) {
   .main-container {
     left: 40%;
-    top: 25%;
+    top: 35%;
     width: 63%;
   }
 }
