@@ -170,7 +170,7 @@ body {
     background-color: #48355a; */
     /* background-blend-mode: difference;
     background-color: #533e67; */
-    background-blend-mode: soft-light;
+    background-blend-mode: difference;
     background-color: #9e6c2e;
   }
 }
