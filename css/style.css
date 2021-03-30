@@ -1109,13 +1109,13 @@ section.social.isOpen {
 
   section.social {
     justify-content: flex-end;
-    margin-right: 6.5%;
+    margin-right: 4.7%;
   }
 }
 
 .icon-3d {
   padding: 15px;
-  color: #fff;
+  color: var(--color-secondary);
   font-size: 4.4rem;
 }
 
