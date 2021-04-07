@@ -146,15 +146,15 @@
             >(Thur/Fri/Sat - Kitchen to 11pm)</small
           ><br
         /></span> -->
-        <span class="heading-primary--sub heading-primary--sub2"
+        <!-- <span class="heading-primary--sub heading-primary--sub2"
           >Takeout Food & Bottle Shop<br />Wed - Sat <br />12pm -
           7pm<br />
-        </span>
+        </span> -->
         <span class="heading-primary--sub heading-primary--sub2"
           >Check out our
-          <a href="jerry-to-go/" class="primary-color" target="_self"
+          <br v-if="!isMobile"><a href="jerry-to-go/" class="primary-color" target="_self"
             >Takeout Menu</a
-          ></span>
+          ><br v-if="isMobile">/Saturday Delivery</span>
         <!-- <span class="heading-primary--sub heading-primary--sub2">
           for reservations:
           <a
