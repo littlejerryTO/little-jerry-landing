@@ -61,22 +61,7 @@
                 ><i class="fas fa-utensils"></i> Menu
               </a>
             </li>
-            <li class="site-navigation--link-container">
-              <a class="link--underline" target="_self" href="../jerry-to-go"
-                ><i class="fas fa-shopping-bag"></i> Jerry To Go
-              </a>
-            </li>
-            <li class="site-navigation--link-container">
-              <a class="link--underline" href="mailto:info@thelittlejerry.com">
-                <i class="fas fa-envelope-square"></i> info@thelittlejerry.com
-              </a>
-            </li>
-            <li class="site-navigation--link-container">
-              <a class="link--underline" href="tel:416-551-5981">
-                <i class="fa fa-phone-square"></i> 416-551-5981
-              </a>
-            </li>
-            <li class="site-navigation--link-container">
+            <!-- <li class="site-navigation--link-container">
               <a
                 class="link--underline"
                 target="_blank"
@@ -92,6 +77,21 @@
                 href="../img/LittleJerry_Beer_okrn2pjttk.pdf"
               >
                 <i class="fa fa-beer"></i> Beer List
+              </a>
+            </li> -->
+            <!-- <li class="site-navigation--link-container">
+              <a class="link--underline" target="_self" href="../jerry-to-go"
+                ><i class="fas fa-shopping-bag"></i> Jerry To Go
+              </a>
+            </li> -->
+            <li class="site-navigation--link-container">
+              <a class="link--underline" href="mailto:info@thelittlejerry.com">
+                <i class="fas fa-envelope-square"></i> info@thelittlejerry.com
+              </a>
+            </li>
+            <li class="site-navigation--link-container">
+              <a class="link--underline" href="tel:416-551-5981">
+                <i class="fa fa-phone-square"></i> 416-551-5981
               </a>
             </li>
             <!-- <li class="site-navigation--link-container">
@@ -130,7 +130,7 @@
       </div>
     </section>
     <section v-if="isMobile" id="contact-tracing" class="contact-tracing">
-      <a href="https://forms.gle/A1DDgskL57zj4U5A6" target="_blank">
+      <a href="https://forms.gle/bkKdZcpRhVPiyejM8" target="_blank">
         <i class="fa fa-external-link"></i> Contact Tracing Form
       </a>
     </section>
@@ -138,12 +138,14 @@
       <div class="main-container-content">
         <h1 class="heading-primary">Food Menu</h1>
         <div class="menut-item">
+          <div class="menut-item">
           <h3
             class="heading-secondary heading-secondary--list heading-secondary--item"
           >
-            Brioche <span class="primary-color">+</span> Tomato Butter
+            <!-- Brioche <span class="primary-color">+</span> Tomato Butter
             <br v-if="isMobile" /><span class="primary-color">&</span> House
-            Pickles
+            Pickles -->
+            Pickle Plate<br /> <small>(Seasonal <span class="primary-color">&</span> Rotating)</small>
           </h3>
           <h3
             class="heading-secondary heading-secondary--list heading-secondary--price"
@@ -151,99 +153,92 @@
             <span class="primary-color">$</span>9
           </h3>
         </div>
-        <div class="menut-item">
           <h3
             class="heading-secondary heading-secondary--list heading-secondary--item"
           >
-            Beef Tart w<span class="primary-color">/</span> Asian Pear, Daikon
-            <span class="primary-color">+</span> Egg Yolk Jam
+            Dressed Greens
           </h3>
           <h3
             class="heading-secondary heading-secondary--list heading-secondary--price"
           >
-            <span class="primary-color">$</span>8
+            <span class="primary-color">$</span>5
+          </h3>
+          </div>
+        <div class="menut-item">
+          <h3
+            class="heading-secondary heading-secondary--list heading-secondary--item"
+          >
+            Asparagus w<span class="primary-color">/</span> Saffron Aioli <span class="primary-color">+</span> Black Olive
+          </h3>
+          <h3
+            class="heading-secondary heading-secondary--list heading-secondary--price"
+          >
+            <span class="primary-color">$</span>12
           </h3>
         </div>
         <div class="menut-item">
           <h3
             class="heading-secondary heading-secondary--list heading-secondary--item"
           >
-            Truffle Roasted Maitake <br v-if="isMobile" />w<span
-              class="primary-color"
-              >/</span
-            >
-            Chives
+            Beef Tartare w<span class="primary-color">/</span> Pistachio, Cheddar, Mushroom <span class="primary-color">+</span> Tendon Chips
           </h3>
           <h3
             class="heading-secondary heading-secondary--list heading-secondary--price"
           >
-            <span class="primary-color">$</span>9
+            <span class="primary-color">$</span>17
           </h3>
         </div>
         <div class="menut-item">
           <h3
             class="heading-secondary heading-secondary--list heading-secondary--item"
           >
-            Smoked Ontario Corn <span class="primary-color">+</span> Dill Oil
+            Scallop Crudo w<span class="primary-color">/</span> Brown Butter, Zucchini 
+            <span class="primary-color">+</span> Green Sauce
           </h3>
           <h3
             class="heading-secondary heading-secondary--list heading-secondary--price"
           >
-            <span class="primary-color">$</span>11
+            <span class="primary-color">$</span>13
           </h3>
         </div>
         <div class="menut-item">
           <h3
             class="heading-secondary heading-secondary--list heading-secondary--item"
           >
-            Scallop Crudo <br v-if="isMobile" />w<span class="primary-color"
-              >/</span
-            >
-            Coconut Vinaigrette <span class="primary-color">+</span>
-            <br v-if="isMobile" />Fried Shallots
-            <span class="primary-color">&</span> Serrano Peppers
+            Cabbage w<span class="primary-color">/</span
+            > Mussels <span class="primary-color">+</span> Chili
           </h3>
           <h3
             class="heading-secondary heading-secondary--list heading-secondary--price"
           >
-            <span class="primary-color">$</span>16
+            <span class="primary-color">$</span>13
           </h3>
         </div>
         <div class="menut-item">
           <h3
             class="heading-secondary heading-secondary--list heading-secondary--item"
           >
-            Confit New Potatoes <br v-if="isMobile" />w<span
-              class="primary-color"
-              >/</span
-            >
-            Kimchi Aioli <br v-if="isMobile" /><span class="primary-color"
-              >+</span
-            >
-            Pickled Red Pearl Onions
-            <!-- <br /><span>(fried in beef lard)</span> -->
+            Smoked Trout Rillette w<span class="primary-color">/</span> Dill, Pickles <span class="primary-color">+</span> Lavash
           </h3>
           <h3
             class="heading-secondary heading-secondary--list heading-secondary--price"
           >
-            <span class="primary-color">$</span>8
+            <span class="primary-color">$</span>14
           </h3>
         </div>
         <div class="menut-item">
           <h3
             class="heading-secondary heading-secondary--list heading-secondary--item"
           >
-            30 Day Dry Aged ON Ribeye w<span class="primary-color">/</span>
-            Pickled Enoki, Smoked Sunchokes
-            <span class="primary-color">+</span> Parsley Pesto
+            Mackerel w<span class="primary-color">/</span> Smoked Poblano
           </h3>
           <h3
             class="heading-secondary heading-secondary--list heading-secondary--price"
           >
-            <span class="primary-color">$</span>31
+            <span class="primary-color">$</span>25
           </h3>
         </div>
-        <div class="menut-item">
+        <!-- <div class="menut-item">
           <h3
             class="heading-secondary heading-secondary--list heading-secondary--item"
           >
@@ -275,11 +270,11 @@
             class="heading-secondary heading-secondary--list heading-secondary--price"
           >
             <span class="primary-color">$</span>7
-          </h3>
+          </h3> -->
         </div>
       </div>
     </section>
-    <section class="links-container">
+    <!-- <section class="links-container">
       <div class="main-container-links">
         <ul class="site-navigation--primary-links">
           <li
@@ -304,16 +299,16 @@
               <i class="fa fa-beer"></i> Beer List
             </a>
           </li>
-          <!-- <li
+          <li
             class="site-navigation--link-container site-navigation--link-container--page"
           >
             <a class="link--underline" target="_blank" href="../wine-flights/"
               ><i class="fas fa-wine-glass-alt"></i> Wine Flights
             </a>
-          </li> -->
+          </li>
         </ul>
       </div>
-    </section>
+    </section> -->
     <!-- <iframe
       style="width: 100%; height: 740px; margin: auto; border: 0 solid #fff;"
       src="https://www.tbdine.com/book/restaurant/the-little-jerry?idApp=69206&language=en-us"
