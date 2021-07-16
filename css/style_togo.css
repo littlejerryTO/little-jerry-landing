@@ -500,6 +500,10 @@ body.isOpenSiteNavigation .masthead-scrollbar-mask {
   pointer-events: auto;
 }
 
+span.bold{
+  font-weight: 700;
+}
+
 @media screen and (min-width: 768px) {
   .masthead {
     padding: 4rem 4rem 3rem;
