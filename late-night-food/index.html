@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet"> -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Ultra&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="../css/style_togo.css" />
+    <link rel="shortcut icon" type="image/png" href="../img/favicon.png" />
+
+    <title>The Little Jerry - Menu</title>
+  </head>
+  <body>
+    <section id="headerNav" class="headerNav" :class="{'isOpen' : navInvoke}">
+      <header class="masthead" role="banner" :class="{'isOpen' : navInvoke}">
+        <div class="masthead-left">
+          <h1 class="logo">
+            <!-- <span class="logo-text">The Little Jerry</span> -->
+            <a href="../index.html"
+              ><img src="../img/TheLittleJerryLogo_brown.svg"
+            /></a>
+            <!-- <img src="../../assets/niad_logo{{ miniHeader || isCollapsed || isWhite ? '_bl' : '' }}.svg" alt="Niad Logo" title="Niad Logo"> -->
+          </h1>
+        </div>
+        <div class="masthead-right">
+          <button
+            @click="toggleNav"
+            id="menu__icon"
+            class="menu__mobile navTrigger"
+            :class="{'isOpen' : navInvoke, 'white' : !navInvoke}"
+          >
+            <span class="navTrigger-outer">
+              <span class="navTrigger-inner"></span>
+            </span>
+          </button>
+        </div>
+      </header>
+      <div
+        class="site-navigation"
+        id="site-navigation"
+        aria-hidden="true"
+        :class="{ 'isOpen': navInvoke}"
+      >
+        <nav class="site-navigation--nav" role="navigation">
+          <ul class="site-navigation--primary-links">
+            <li class="site-navigation--link-container">
+              <a class="link--underline" target="_self" href="../menu/"
+                ><i class="fas fa-utensils"></i> Menu
+              </a>
+            </li>
+            <li class="site-navigation--link-container">
+              <a
+                class="link--underline"
+                target="_blank"
+                href="../img/LittleJerry_Wine_b2ffzatl4t.pdf"
+              >
+                <i class="fas fa-wine-bottle"></i> Wine List
+              </a>
+            </li>
+            <li class="site-navigation--link-container">
+              <a
+                class="link--underline"
+                target="_blank"
+                href="../img/LittleJerry_Beer_okrn2pjttk.pdf"
+              >
+                <i class="fa fa-beer"></i> Beer/Cider/Vermouth
+              </a>
+            </li>
+            <li class="site-navigation--link-container">
+              <a class="link--underline" target="_self" href="index.html"
+                ><i class="fas fa-utensils"></i> Late Night Food
+              </a>
+            </li>
+            <li class="site-navigation--link-container">
+              <a class="link--underline" href="mailto:info@thelittlejerry.com">
+                <i class="fas fa-envelope-square"></i> info@thelittlejerry.com
+              </a>
+            </li>
+            <li class="site-navigation--link-container">
+              <a class="link--underline" href="tel:416-551-5981">
+                <i class="fa fa-phone-square"></i> 416-551-5981
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+    <section v-if="isMobile" id="contact-tracing" class="contact-tracing">
+      <a href="https://forms.gle/bkKdZcpRhVPiyejM8" target="_blank">
+        <i class="fa fa-external-link"></i> Contact Tracing Form
+      </a>
+    </section>
+    <section id="main-container" class="main-container">
+      <div class="main-container-content">
+        <h1 class="heading-primary">Food Menu</h1>
+          <div class="menut-item">
+          <h3
+            class="heading-secondary heading-secondary--list heading-secondary--item"
+          >
+            Pickle Plate<br /> <small>(Seasonal <span class="primary-color">&</span> Rotating)</small>
+          </h3>
+          <h3
+            class="heading-secondary heading-secondary--list heading-secondary--price"
+          >
+            <span class="primary-color">$</span>6
+          </h3>
+        </div>
+        <div class="menut-item">
+          <h3
+            class="heading-secondary heading-secondary--list heading-secondary--item"
+          >
+            Potato Salad w<span class="primary-color">/</span> Anchovies
+          </h3>
+          <h3
+            class="heading-secondary heading-secondary--list heading-secondary--price"
+          >
+            <span class="primary-color">$</span>8
+          </h3>
+        </div>
+        <div class="menut-item">
+          <h3
+            class="heading-secondary heading-secondary--list heading-secondary--item"
+          >
+            Smoked Trout Rillette w<span class="primary-color">/</span> Dill, Pickles <span class="primary-color">+</span> Lavash
+          </h3>
+          <h3
+            class="heading-secondary heading-secondary--list heading-secondary--price"
+          >
+            <span class="primary-color">$</span>14
+          </h3>
+        </div>
+      </div>
+    </section>
+    <section class="links-container">
+      <div class="main-container-links">
+        <ul class="site-navigation--primary-links">
+          <li
+            class="site-navigation--link-container site-navigation--link-container--page"
+          >
+            <a
+              class="link--underline"
+              target="_blank"
+              href="../img/LittleJerry_Wine_b2ffzatl4t.pdf"
+            >
+              <i class="fas fa-wine-bottle"></i> Wine List
+            </a>
+          </li>
+          <li
+            class="site-navigation--link-container site-navigation--link-container--page"
+          >
+            <a
+              class="link--underline"
+              target="_blank"
+              href="../img/LittleJerry_Beer_okrn2pjttk.pdf"
+            >
+              <i class="fa fa-beer"></i> Beer List
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <script src="https://unpkg.com/vue@2.6.8/dist/vue.min.js"></script>
+    <script>
+      let header = new Vue({
+        el: "#headerNav",
+        data: {
+          navInvoke: false,
+        },
+        methods: {
+          toggleNav: function () {
+            this.navInvoke = !this.navInvoke;
+          },
+        },
+      });
+      let maain = new Vue({
+        el: "#main-container",
+        data: {
+          isMobile: false,
+          window: {
+            width: 0,
+            height: 0,
+          },
+        },
+        created() {
+          window.addEventListener("resize", this.handleResize);
+          this.handleResize();
+        },
+        destroyed() {
+          window.removeEventListener("resize", this.handleResize);
+        },
+        methods: {
+          handleResize() {
+            this.window.width = window.innerWidth;
+            this.window.height = window.innerHeight;
+            this.handleMobile();
+          },
+          handleMobile: function () {
+            this.window.width <= 600
+              ? (this.isMobile = true)
+              : (this.isMobile = false);
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
