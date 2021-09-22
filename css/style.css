@@ -234,12 +234,11 @@ img {
   border-radius: 5px;
   cursor: pointer;
   position: relative;
-  display: block;
-  width: 30rem;
+  display: inline-block;
   text-align: center;
-  padding: 1.5rem;
-  margin-top: 1.1rem;
-  font-size: 2.4rem;
+  padding: 1.5rem 2.5rem;
+  margin: 1.1rem 0;
+  font-size: 2.2rem;
   text-shadow: none;
   background: var(--color-primary);
 }
@@ -402,8 +401,8 @@ span.heading-primary--sub.heading-primary--sub2 a {
 @media only screen and (max-width: 37.5em) {
   .main-container {
     left: 40%;
-    top: 35%;
-    width: 63%;
+    top: 30%;
+    width: 70%;
   }
 }
 
