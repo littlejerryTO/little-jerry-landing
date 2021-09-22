@@ -233,13 +233,13 @@ img {
   color: var(--color-tertiary);
   border-radius: 5px;
   cursor: pointer;
-  height: 50px;
   position: relative;
   display: block;
-  width: 200px;
+  width: 30rem;
+  text-align: center;
   padding: 1.5rem;
   margin-top: 1.1rem;
-  font-size: 2.6rem;
+  font-size: 2.4rem;
   text-shadow: none;
   background: var(--color-primary);
 }
