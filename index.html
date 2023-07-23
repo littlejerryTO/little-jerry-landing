@@ -144,11 +144,11 @@
         />
         <!-- <span class="heading-primary--sub">Summer 2019</span> -->
         <span class="heading-primary--sub">418 College St<br />Toronto</span>
-          <span v-if="Date.now() < dateBefore" class="heading-primary--sub heading-primary--sub2"
+          <span v-if="Date.now() > dateAfter" class="heading-primary--sub heading-primary--sub2"
           >Wed - Mon <br/>6pm - 2am
         <small><br/><sup>*</sup>Kitchen to 10:30pm (10pm Sunday/Monday)</small>
         </span>
-        <span v-if="Date.now() < dateBefore" class="heading-primary--sub heading-primary--sub2"
+        <span v-if="Date.now() > dateAfter" class="heading-primary--sub heading-primary--sub2"
           >
           Reservations available for dinner
           <br><a href="https://resy.com/cities/tor/the-little-jerry" class="btn-link" target="_blank"
@@ -157,7 +157,7 @@
           <small><br>Walk-ins Only <br>after 10pm<br v-if="isMobile"></small>
           </span
         >
-        <span v-if="Date.now() > dateBefore" class="heading-primary--sub heading-primary--sub2"
+        <span v-if="Date.now() < dateAfter" class="heading-primary--sub heading-primary--sub2"
           >
           Hi, we are Closed from July 23 <br v-if="isMobile">to August 8<br>for a Brief Summer Break.<br>Join us when we reopen on August 9! 
           </span
@@ -240,7 +240,7 @@
             height: 0,
           },
           dateBefore: new Date('2023-07-23'),
-          dateAfter: new Date('2023-08-06'),
+          dateAfter: new Date('2023-08-05'),
         },
         created() {
           window.addEventListener("resize", this.handleResize);
