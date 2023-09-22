@@ -287,6 +287,10 @@ span.heading-primary--sub.heading-primary--sub2 a {
   margin-bottom: 1rem;
 }
 
+.heading-secondary small {
+  font-size: 2rem;
+}
+
 .heading-secondary a {
   text-decoration: underline;
 }
