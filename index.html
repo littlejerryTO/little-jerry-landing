@@ -145,7 +145,7 @@
         <!-- <span class="heading-primary--sub">Summer 2019</span> -->
         <span class="heading-primary--sub">418 College St<br />Toronto</span>
           <span v-if="Date.now() > dateAfter" class="heading-primary--sub heading-primary--sub2"
-          >Wed - Mon <br/>6pm - 2am
+          >Wed-Sun 6pm-2am<br>Mon 6pm-12am
         <small><br/><sup>*</sup>Kitchen to 10:30pm (10pm Sunday/Monday)</small>
         </span>
         <span v-if="Date.now() > dateAfter" class="heading-primary--sub heading-primary--sub2"
@@ -154,7 +154,7 @@
           <br><a href="https://resy.com/cities/tor/the-little-jerry" class="btn-link" target="_blank"
             >Book on Resy</a
           >
-          <small><br>Walk-ins Only <br>after 10pm<br v-if="isMobile"></small>
+          <small><br>*Walk-ins Only <br>after 10pm<br v-if="isMobile"></small>
           </span
         >
         <span v-if="Date.now() < dateAfter" class="heading-primary--sub heading-primary--sub2"
