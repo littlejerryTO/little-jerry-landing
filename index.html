@@ -145,16 +145,13 @@
         <!-- <span class="heading-primary--sub">Summer 2019</span> -->
         <span class="heading-primary--sub">418 College St<br />Toronto</span>
           <span v-if="Date.now() > dateAfter" class="heading-primary--sub heading-primary--sub2"
-          >Wed-Sun 6pm-2am<br>Mon 6pm-12am
-        <small><br/><sup>*</sup>Kitchen to 10:30pm (10pm Sunday/Monday)</small>
+          >Wed-Sun 6pm-2am<br><small><sup>*</sup>Closed Mon/Tues</small>
+        <br/><sup>*</sup>Kitchen to 10:30pm <small>(10pm Sunday)</small>
         </span>
         <span v-if="Date.now() > dateAfter" class="heading-primary--sub heading-primary--sub2"
           >
-          Reservations available for dinner
-          <br><a href="https://resy.com/cities/toronto-on/venues/the-little-jerry" class="btn-link" target="_blank"
-            >Book on Resy</a
-          >
-          <small><br>*Walk-ins Only <br>after 10pm<br v-if="isMobile"></small>
+          No Reservations
+          <small><br><sup>*</sup>Walk-ins Only<br v-if="isMobile"></small>
           </span
         >
         <span v-if="Date.now() < dateAfter" class="heading-primary--sub heading-primary--sub2"
@@ -162,6 +159,9 @@
           Hi, we are Closed from July 23 <br v-if="isMobile">to August 8<br>for a Brief Summer Break.<br>Join us when we reopen on August 9! 
           </span
         >
+        <span class="heading-primary--sub heading-primary--sub2">
+          Roll thru, have a drink, eat a snack, listen to the system...
+        </span>
         <!-- <a href="https://resy.com/cities/tor/the-little-jerry" id="resyButton-geoYXkk2dOMPDLHWuDidW">Book your The Little Jerry reservation on Resy</a>
 
 <script src="https://widgets.resy.com/embed.js"></script>
