@@ -151,10 +151,10 @@
         </span>
         <span v-if="Date.now() > dateAfter" class="heading-primary--sub heading-primary--sub2"
           >
-          No Reservations
-          <small><br><sup>*</sup>Walk-ins Only<br v-if="isMobile"></small>
-          </span
-        >
+          Reservations available for dinner
+          <br><a href="https://resy.com/cities/toronto-on/venues/the-little-jerry" class="btn-link" target="_blank"
+            >Book on Resy</a
+          >
         <span v-if="Date.now() < dateAfter" class="heading-primary--sub heading-primary--sub2"
           >
           Hi, we are Closed from July 23 <br v-if="isMobile">to August 8<br>for a Brief Summer Break.<br>Join us when we reopen on August 9! 
