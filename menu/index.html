@@ -171,7 +171,7 @@
           <h3
             class="heading-secondary heading-secondary--list heading-secondary--item"
           >
-          Sardine Conserva</span> <br/><small>w<span class="primary-color">/</span> orange, almonds, thyme <span class="primary-color">+</span> rye toast</small>
+          Sardine Conserva</span> <br/><small>w<span class="primary-color">/</span> orange, almonds, <br v-if="isMobile" />thyme <span class="primary-color">+</span> rye toast</small>
           </h3>
           <h3
             class="heading-secondary heading-secondary--list heading-secondary--price"
@@ -184,7 +184,7 @@
             class="heading-secondary heading-secondary--list heading-secondary--item"
           >
           Crunchy Green Salad</span> <br/><small>w<span class="primary-color">/</span> hearts of romaine<span class="primary-color">/</span>fennel<span class="primary-color">/</span>celery
-            <span class="primary-color">++</span> walnuts <span class="primary-color">+</span> parmigiano</small>
+            <br v-if="isMobile" /><span class="primary-color">++</span> walnuts <span class="primary-color">+</span> parmigiano</small>
           </h3>
           <h3
             class="heading-secondary heading-secondary--list heading-secondary--price"
@@ -224,7 +224,7 @@
             class="heading-secondary heading-secondary--list heading-secondary--item"
           >
           Buttermilk Fried Calamari<br><small>w<span class="primary-color">/</span> szechuan peppercorn,
-            orange <span class="primary-color">+</span> honey glaze
+            <br v-if="isMobile" />orange <span class="primary-color">+</span> honey glaze
           </small></h3>
           <h3
             class="heading-secondary heading-secondary--list heading-secondary--price"
@@ -237,7 +237,7 @@
             class="heading-secondary heading-secondary--list heading-secondary--item"
           >
           Squid Ink Fettucine<br><small>w<span class="primary-color">/</span> pan seared bay scallops
-            <span class="primary-color">+</span> brown butter puttanesca
+            <br v-if="isMobile" /><span class="primary-color">+</span> brown butter puttanesca
           </small></h3>
           <h3
             class="heading-secondary heading-secondary--list heading-secondary--price"
@@ -251,7 +251,7 @@
           >
           Pan Seared Ontario Duck Breast
             <br><small>w<span class="primary-color">/</span> Cherry Sauce, Garlic Rapini
-              <span class="primary-color">+</span> Marcona Almonds</small>
+              <br v-if="isMobile" /><span class="primary-color">+</span> Marcona Almonds</small>
           </h3>
           <h3
             class="heading-secondary heading-secondary--list heading-secondary--price"
